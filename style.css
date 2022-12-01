@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* 
+    font-family: 'Big Shoulders Display', cursive;
+
+    font-family: 'Lexend Deca', sans-serif;
+
+
+*/
+
+:root {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --VeryLightGray: hsl(0, 0%, 95%);
+  --FontSize: 1.5rem;
+  --column-width: 30.5rem;
+  --column-height: 50rem;
+  --column-width-mobile: 32.5rem;
+  --column-height: 50rem;
+  --column-height-mobile:44rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Transparentwhite);
+}
+
+.card-component {
+  display: flex;
+}
+.card-component img {
+  margin-bottom: 3rem;
+}
+
+.card-component .name {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 3rem;
+  color: var(--VeryLightGray);
+}
+
+.card-component .lern-more {
+  background-color: var(--VeryLightGray);
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+  width: 14.5rem;
+  margin-top: 10rem;
+}
+
+.card-component .senans {
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.card-component .luxory {
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.senans,
+.suvs,
+.luxory {
+  width: var(--column-width);
+  height: var(--column-height);
+  padding: 5rem 5rem;
+  color: var(--Transparentwhite);
+  font-size: var(--FontSize);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 2.6rem;
+}
+
+.card-component .senans .lern-more:hover,
+.card-component .suvs .lern-more:hover,
+.card-component .luxory .lern-more:hover {
+  color: var(--VeryLightGray);
+  border: 0.1rem solid var(--VeryLightGray);
+}
+
+.senans {
+  background-color: var(--BrightOrange);
+}
+.card-component .senans .lern-more {
+  color: var(--BrightOrange);
+}
+.card-component .senans .lern-more:hover {
+  background-color: var(--BrightOrange);
+}
+.card-component .suvs .lern-more:hover {
+  background-color: var(--DarkCyan);
+}
+
+.suvs {
+  background-color: var(--DarkCyan);
+}
+
+.card-component .suvs .lern-more {
+  color: var(--DarkCyan);
+}
+.card-component .suvs .lern-more:hover {
+  background-color: var(--DarkCyan);
+}
+.luxory {
+  background-color: var(--VeryDarkCyan);
+}
+
+.card-component .luxory .lern-more {
+  color: var(--VeryDarkCyan);
+}
+
+.card-component .luxory .lern-more:hover {
+  background-color: var(--VeryDarkCyan);
+}
+
+@media only screen and (max-width: 980px) {
+  .card-component {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  .card-component .senans {
+    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .card-component .luxory {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 0;
+  }
+  .card-component .lern-more {
+    width: 15rem;
+    margin-top: 2rem;
+  }
+
+  .senans,
+  .suvs,
+  .luxory {
+    width: var(--column-width-mobile);
+    height: var(--column-height-mobile);
+  }
+}
