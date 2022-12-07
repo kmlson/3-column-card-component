@@ -32,6 +32,8 @@ html {
 }
 
 body {
+  
+ 
 }
 
 main {
@@ -44,6 +46,9 @@ main {
 
 .card-component {
   display: flex;
+
+  
+  
 }
 .card-component img {
   margin-bottom: 3rem;
@@ -134,24 +139,28 @@ main {
 @media only screen and (max-width: 980px) {
   .card-component {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     margin: 4rem 0;
+   
   }
 
   main {
-    height: 100%;
+    height: auto;
+    
   }
 
   .card-component .senans {
     border-bottom-left-radius: 0rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+   
   }
 
   .card-component .luxory {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1em;
     border-top-right-radius: 0;
+    
   }
   .card-component .lern-more {
     width: 15rem;
@@ -161,7 +170,8 @@ main {
   .senans,
   .suvs,
   .luxory {
-    width: var(--column-width-mobile);
-    height: var(--column-height-mobile);
+    max-width: var(--column-width-mobile);
+    max-height: var(--column-height-mobile);
+    
   }
 }
